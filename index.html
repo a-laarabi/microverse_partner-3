@@ -2,13 +2,21 @@
 <html>
 <head>
   <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
   <style type="text/css">
-    * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 10px;
 }
+
+
 li {
   list-style: none;
 }
@@ -41,7 +49,7 @@ nav ul {
   font-weight: bolder;
 }
 #welcome-section {
-  background-color: #666;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   height: 100vh;
 }
 .wlcm {
@@ -54,10 +62,13 @@ nav ul {
 }
 .wlcm h1 {
   color: #fff;
-  font-size: 3.4rem;
+  font-size: 6rem;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 #projects {
+  display: flex;
+  flex-direction: column;
   padding: 4% 3em;
   background-color: #45567d;
 }
@@ -67,15 +78,17 @@ nav ul {
   font-size: 3rem;
   text-align: center;
   color: #fff;
+  font-family: 'Fredericka the Great', cursive;
 }
 .list-of-projects ul {
   width: 100%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.project-card {
+.project-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,6 +106,46 @@ nav ul {
   color: #fff;
 }
 
+    #contact{
+      position: relative;
+      height: 30vh;
+      background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    }
+
+    #profile-link{
+      position: absolute;
+      top:40%;
+      left :50%;
+      transform: translate(-50%, -50%);
+    }
+    #profile-link h2{
+      font-size: 3em;
+      color: white;
+      text-align: center;
+      padding-top: 30px;
+      font-family: 'Fredericka the Great', cursive;
+    }
+
+    #profile-link ul{
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+      width: 120px;
+      margin-top:20px;
+    }
+
+    #profile-link li{
+      
+      margin-right: 15px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body{
+        display: none;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -100,9 +153,9 @@ nav ul {
     <nav id="navbar">
     <div></div>
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -119,62 +172,62 @@ nav ul {
         <div class="list-of-projects">
             <ul>
                 <li>
-                    <div class="project-card">
+                    <div class="project-tile">
                         <div class="project-image">
                             <img src="./images/insect-g9b2ea4e07_640.jpg" alt="image">
                         </div>
                         <div class="project-title">
-                            <h3>Tribute Page</h3>
+                            <a href = "#"><h3>Tribute Page</h3></a>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="project-card">
+                    <div class="project-tile">
                         <div class="project-image">
                             <img src="./images/insect-g9b2ea4e07_640.jpg" alt="image">
                         </div>
                         <div class="project-title">
-                            <h3>Tribute Page</h3>
+                            <a href = "#"><h3>Tribute Page</h3></a>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="project-card">
+                    <div class="project-tile">
                         <div class="project-image">
                             <img src="./images/insect-g9b2ea4e07_640.jpg" alt="image">
                         </div>
                         <div class="project-title">
-                            <h3>Tribute Page</h3>
+                            <a href = "#"><h3>Tribute Page</h3></a>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="project-card">
+                    <div class="project-tile">
                         <div class="project-image">
                             <img src="./images/insect-g9b2ea4e07_640.jpg" alt="image">
                         </div>
                         <div class="project-title">
-                            <h3>Tribute Page</h3>
+                            <a href = "#"><h3>Tribute Page</h3></a>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="project-card">
+                    <div class="project-tile">
                         <div class="project-image">
                             <img src="./images/insect-g9b2ea4e07_640.jpg" alt="image">
                         </div>
                         <div class="project-title">
-                            <h3>Tribute Page</h3>
+                            <a href = "#"><h3>Tribute Page</h3></a>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="project-card">
+                    <div class="project-tile">
                         <div class="project-image">
                             <img src="./images/insect-g9b2ea4e07_640.jpg" alt="image">
                         </div>
                         <div class="project-title">
-                            <h3>Tribute Page</h3>
+                            <a href = "#"><h3>Tribute Page</h3></a>
                         </div>
                     </div>
                 </li>
@@ -183,7 +236,16 @@ nav ul {
     </section>
   </main>
   <footer>
-
+      <section id="contact">
+        <div id="profile-link">
+          <h2>Let's work together...</h2>
+            <ul>
+              <li><a href="https://github.com/Nyamekesse" target="_blank"><i class="fa fa-github" style="font-size:36px;color:white"></i></a></li>
+              
+              <li><a href="https://github.com/hakunamatata-journey" target="_blank"><i class="fa fa-github" style="font-size:36px;color:white"></i></a></li>
+            </ul>
+        </div>
+      </section>
   </footer>
 </body>
 </html>
